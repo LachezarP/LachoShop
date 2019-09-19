@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LachoShop</string>
+    <string name="chicagoBDescription">An authentic puck from 1979 during the match against the Sharks\n\nPrice : $75</string>
+    <string name="chicagoTitle">Chicago Blackhawks</string>
 </resources>
