@@ -73,7 +73,7 @@
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_title" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_cardView1Title" />
 
     <TextView
         android:id="@+id/textView"
@@ -88,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_total" />
 
     <TextView
-        android:id="@+id/textView_title"
+        android:id="@+id/textView_cardView1Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"

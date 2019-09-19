@@ -16,10 +16,13 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imgCard1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher_foreground" />
+            android:background="@color/cardColorBackground"
+            android:contentDescription="card1ImageDescription"
+            app:srcCompat="@mipmap/ic_launcher_foreground"
+            tools:srcCompat="@mipmap/ic_launcher_foreground" />
 
         <LinearLayout
             android:layout_width="263dp"
@@ -27,31 +30,34 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/textView_cardView1Title"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/chicagoTitle"
+                android:background="@color/cardColorBackground"
+                android:text="@string/card1_title"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textView_cardView1Description"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/chicagoBDescription" />
+                android:background="@color/cardColorBackground"
+                android:text="@string/card1_chicagoBDescription" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/cardColorBackground"
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/button_card1Add"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_weight="1"
@@ -59,7 +65,7 @@
                 android:stateListAnimator="@android:anim/fade_in" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView_card1Amount"
                 android:layout_width="36dp"
                 android:layout_height="35dp"
                 android:layout_weight="1"
@@ -68,7 +74,7 @@
                 android:textAlignment="center" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/button_card1Remove"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_weight="1"

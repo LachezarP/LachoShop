@@ -4,46 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardColorBackground"
+    android:background="@color/cardview_light_background"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView_Welcome"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/alegreya_sans_sc_extrabold"
-        android:text="Welcome"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/colorPrimary"
-        android:textSize="36sp"
+        android:layout_marginTop="164dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PuckShop" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Let's get started"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView_pucks"
-        app:layout_constraintVertical_bias="0.172" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hockeystick" />
 
     <TextView
-        android:id="@+id/PuckShop"
+        android:id="@+id/puckShop_Activity2"
         android:layout_width="196dp"
         android:layout_height="61dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="44dp"
         android:fontFamily="@font/alegreya_sans_sc_extrabold"
-        android:text="Puck Shop"
+        android:text="@string/text_titleWelcomeActiviy"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="36sp"
@@ -52,15 +31,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/puckShop_Activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/alegreya_sans_sc_extrabold"
+        android:text="@string/text_mainActivityDescription"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/puckShop_Activity2" />
+
     <ScrollView
         android:id="@+id/scrollView_pucks"
         android:layout_width="411dp"
-        android:layout_height="158dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="304dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_Welcome">
+        app:layout_constraintTop_toBottomOf="@+id/puckShop_Activity">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -73,5 +67,18 @@
                 android:layout_height="match_parent"></include>
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/button_checkOut"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Check Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView_pucks"
+        app:layout_constraintVertical_bias="0.33" />
 
 </android.support.constraint.ConstraintLayout>
