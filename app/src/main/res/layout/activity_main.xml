@@ -64,7 +64,21 @@
             <include
                 layout="@layout/card1_content"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"></include>
+                android:layout_height="match_parent" />
+
+            <include
+                layout="@layout/card2_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                layout="@layout/card3_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <include
+                layout="@layout/card4_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
         </LinearLayout>
     </ScrollView>
 
