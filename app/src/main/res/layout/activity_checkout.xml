@@ -30,7 +30,7 @@
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_beforeTaxes" />
 
     <TextView
         android:id="@+id/textView_gst"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_total2" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_beforeTaxes"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
@@ -86,7 +86,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_beforeTax" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_beforeTaxTitle" />
 
     <TextView
         android:id="@+id/puckShop2"
@@ -128,10 +128,10 @@
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_beforeTaxes" />
 
     <EditText
-        android:id="@+id/editText_beforeTax"
+        android:id="@+id/editText_beforeTaxTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

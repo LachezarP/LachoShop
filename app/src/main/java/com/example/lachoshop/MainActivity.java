@@ -8,17 +8,17 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    double totalPrice = 0;
+    double totalPrice = 0; // Var to store the total price before taxes
 
-    int firstProduct = 0;
-    int secondProduct = 0;
-    int thirdProduct = 0;
-    int fourthProduct = 0;
+    int firstProduct = 0; // Var to show how many of the first products the client has chosen
+    int secondProduct = 0; // Var to show how many of the second products the client has chosen
+    int thirdProduct = 0; // Var to show how many of the third products the client has chosen
+    int fourthProduct = 0; // Var to show how many of the fourth products the client has chosen
 
-    final int PRICE_FIRST_PRODUCT = 75;
-    final int PRICE_SECOND_PRODUCT = 146;
-    final int PRICE_THIRD_PRODUCT = 290;
-    final int PRICE_FOURTH_PRODUCT = 49;
+    final int PRICE_FIRST_PRODUCT = 75; // Var for the final price of the first product
+    final int PRICE_SECOND_PRODUCT = 146; // Var for the final price of the second product
+    final int PRICE_THIRD_PRODUCT = 290; // Var for the final price of the third product
+    final int PRICE_FOURTH_PRODUCT = 49; // Var for the final price of the fourth product
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * Method to :
+     *      +Add the items
+     *      +Calculate the total price of each product from the number of the products chosen
+     *      +Display it on the screen
+     * @param view
+     */
     public void addItem(View view) {
         String strTemp ="";
 
@@ -75,9 +82,15 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-
-//        Log.d("test", Double.toString(totalPrice));
     }
+
+    /**
+     * Method to :
+     *      +Remove the items
+     *      +Calculate the total price of each product from the number of the products chosen
+     *      +Display it on the screen
+     * @param view
+     */
     public void removeItem(View view) {
         String strTemp = "";
 
@@ -142,12 +155,13 @@ public class MainActivity extends AppCompatActivity {
                     textViewCard4Total.setText(strTemp);
                     break;
                 }
-
-
-
         }
     }
 
+    /**
+     * Method to calculate and send the final price to the CheckOut activity
+     * @param view
+     */
     public void checkOut(View view) {
         totalPrice = firstProduct * PRICE_FIRST_PRODUCT
                 + secondProduct * PRICE_SECOND_PRODUCT

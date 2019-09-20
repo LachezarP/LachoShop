@@ -12,6 +12,11 @@ public class WelcomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_screen);
     }
+
+    /**
+     * Method to switch to the MainActivity
+     * @param view
+     */
     public void sendMessage(View view) {
         Intent intent = new Intent(WelcomeScreen.this, MainActivity.class);
         startActivity(intent);
