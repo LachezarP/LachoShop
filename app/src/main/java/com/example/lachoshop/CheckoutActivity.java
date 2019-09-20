@@ -26,10 +26,10 @@ public class CheckoutActivity extends AppCompatActivity {
         if(extra != null){
             double totalPrice = extra.getDouble("totalPrice");
 
-            TextView textViewBeforeTaxes = (TextView) findViewById(R.id.textView_beforeTaxes);
-            TextView textViewGst = (TextView) findViewById(R.id.textView_gst);
-            TextView textViewQst = (TextView) findViewById(R.id.textView_qst);
-            TextView textViewTotalWithTax = (TextView) findViewById(R.id.textView_totalWithTax);
+            TextView textViewBeforeTaxes = findViewById(R.id.textView_beforeTaxes);
+            TextView textViewGst = findViewById(R.id.textView_gst);
+            TextView textViewQst = findViewById(R.id.textView_qst);
+            TextView textViewTotalWithTax = findViewById(R.id.textView_totalWithTax);
 
             governmentTax = totalPrice * GST_VAR;
             quebecTax = totalPrice * QST_VAR;
