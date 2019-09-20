@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imgCard2"
+            android:id="@+id/imgCard1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/cardColorBackground"
@@ -30,7 +30,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView_cardView1Title"
+                android:id="@+id/textView_cardView4Title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -41,12 +41,20 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView_cardView1Description"
+                android:id="@+id/textView_cardView4Description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/cardColorBackground"
                 android:text="@string/card4_description" />
+
+            <TextView
+                android:id="@+id/textView_card4Total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/cardColorBackground"
+                android:text="@string/cardTotal" />
 
         </LinearLayout>
 
@@ -57,15 +65,16 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button_card1Add"
+                android:id="@+id/button_card4Add"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_weight="1"
                 android:background="@android:drawable/ic_input_add"
-                android:stateListAnimator="@android:anim/fade_in" />
+                android:stateListAnimator="@android:anim/fade_in"
+                android:onClick="addItem"/>
 
             <TextView
-                android:id="@+id/textView_card1Amount"
+                android:id="@+id/textView_card4Amount"
                 android:layout_width="36dp"
                 android:layout_height="35dp"
                 android:layout_weight="1"
@@ -74,7 +83,7 @@
                 android:textAlignment="center" />
 
             <Button
-                android:id="@+id/button_card1Remove"
+                android:id="@+id/button_card4Remove"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_weight="1"

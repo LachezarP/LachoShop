@@ -30,7 +30,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView_cardView1Title"
+                android:id="@+id/textView_cardView4Title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -41,12 +41,20 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView_cardView1Description"
+                android:id="@+id/textView_cardView4Description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/cardColorBackground"
                 android:text="@string/card1_chicagoBDescription" />
+
+            <TextView
+                android:id="@+id/textView_card1Total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/cardColorBackground"
+                android:text="@string/cardTotal" />
 
         </LinearLayout>
 
@@ -62,7 +70,9 @@
                 android:layout_height="36dp"
                 android:layout_weight="1"
                 android:background="@android:drawable/ic_input_add"
-                android:stateListAnimator="@android:anim/fade_in" />
+                android:stateListAnimator="@android:anim/fade_in"
+                android:onClick="addItem"
+                />
 
             <TextView
                 android:id="@+id/textView_card1Amount"

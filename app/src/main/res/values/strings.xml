@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">LachoShop</string>
-    <string name="card1_chicagoBDescription">An authentic puck from 1979 during the match against the Sharks\n\nPrice : $75</string>
+    <string name="card1_chicagoBDescription">An authentic puck from 1979 during the match against the Sharks\nPrice : $75</string>
     <string name="card1_title">Chicago Blackhawks</string>
     <string name="button_welcome">Let\'s get started</string>
     <string name="text_welcome">Welcome</string>
@@ -10,11 +10,12 @@
         in our shop</string>
     <string name="card1ImageDescription">Image of Chicago Blackhawks puck</string>
     <string name="card2_title">Calgary Flames</string>
-    <string name="card2_description">The puck used during the 1998 playoffs with Chicago Blackhawks\n\nPrice: 146$</string>
+    <string name="card2_description">The puck used during the 1998 playoffs with Chicago Blackhawks\nPrice: 146$</string>
     <string name="imageDescriptionColoradoAvalanche">Image of the Colorado Avalanche puck</string>
-    <string name="card3_description">One of the only left pucks signed by the great player Milan Hejduk\n\nPrice: 290$</string>
+    <string name="card3_description">One of the only left pucks signed by the great player Milan Hejduk\nPrice: 290$</string>
     <string name="card4ImageDescription">Image of Minnesota Wild\'s puck</string>
     <string name="card4_title">Minnesota Wild</string>
-    <string name="card4_description">An ordinary puck that was used during the practices of the team\n\nPrice: 49$</string>
+    <string name="card4_description">An ordinary puck that was used during the practices of the team\nPrice: 49$</string>
     <string name="card3_title">Colorado Avalanche</string>
+    <string name="cardTotal">Total : $0</string>
 </resources>
