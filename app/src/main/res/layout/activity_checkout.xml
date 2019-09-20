@@ -6,8 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".CheckoutActivity">
 
+    <ImageView
+        android:id="@+id/imageView_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:contentDescription="@string/imageCheckOutActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hockeystick"
+        tools:srcCompat="@drawable/hockeystick" />
+
     <EditText
-        android:id="@+id/editText_total"
+        android:id="@+id/editText_gst"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/textViewGst"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView_gst"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="96dp"
+        android:gravity="top"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_gst" />
+
+    <EditText
+        android:id="@+id/editText_total2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -15,88 +52,100 @@
         android:layout_marginEnd="8dp"
         android:editable="false"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+        android:inputType="none"
+        android:text="@string/textViewTotal"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_gst" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="216dp"
-        android:layout_height="54dp"
+        android:id="@+id/textView_totalWithTax"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:gravity="top"
         android:text="TextView"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_total2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="top"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_beforeTax" />
 
-    <EditText
-        android:id="@+id/editText_tax"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:editable="false"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+    <TextView
+        android:id="@+id/puckShop2"
+        android:layout_width="196dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/alegreya_sans_sc_extrabold"
+        android:inputType="none"
+        android:text="@string/text_titleWelcomeActiviy"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="216dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/textView_qst"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="96dp"
+        android:gravity="top"
         android:text="TextView"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_tax" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_qst" />
+
+    <EditText
+        android:id="@+id/editText_qst"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="96dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/textViewQst"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/editText_beforeTax"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:editable="false"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+        android:inputType="none"
+        android:text="@string/textViewBeforeTaxes"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_cardView4Title" />
+        app:layout_constraintTop_toBottomOf="@+id/puckShop2" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="216dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_total" />
-
-    <TextView
-        android:id="@+id/textView_cardView4Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="24dp"
-        android:editable="false"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/editText_beforeTax"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

@@ -87,7 +87,8 @@
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_weight="1"
-                android:background="@drawable/ic_minus" />
+                android:background="@drawable/ic_minus"
+                android:onClick="removeItem"/>
 
         </LinearLayout>
 

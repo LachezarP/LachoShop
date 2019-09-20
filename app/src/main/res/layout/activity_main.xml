@@ -88,11 +88,12 @@
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp"
-        android:text="Check Out"
+        android:text="@string/button_checkout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView_pucks"
-        app:layout_constraintVertical_bias="0.33" />
+        app:layout_constraintVertical_bias="0.33"
+        android:onClick="checkOut"/>
 
 </android.support.constraint.ConstraintLayout>

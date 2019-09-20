@@ -18,4 +18,10 @@
     <string name="card4_description">An ordinary puck that was used during the practices of the team\nPrice: 49$</string>
     <string name="card3_title">Colorado Avalanche</string>
     <string name="cardTotal">Total : $0</string>
+    <string name="button_checkout">Check Out</string>
+    <string name="imageCheckOutActivity">Hockey stick with a puck</string>
+    <string name="textViewGst">GST</string>
+    <string name="textViewQst">QST</string>
+    <string name="textViewBeforeTaxes">Before Taxes</string>
+    <string name="textViewTotal">Total</string>
 </resources>
